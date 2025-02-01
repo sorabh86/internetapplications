@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faMagnifyingGlassChart, faPenNib, faGears } from "@fortawesome/free-solid-svg-icons";
 import { Parallax } from "react-scroll-parallax";
-import { Link, NavLink } from "react-router";
+import { NavLink } from "react-router";
 
 interface Props {}
 
@@ -20,8 +20,8 @@ function Header(props: Props) {
             <div className="lg:ml-auto lg:text-3xl">
               <NavLink to="/" className="link-btn" >Charles Drake</NavLink> - <a href="tel:4169519592" className="text-amber-300 cursor-pointer hover:text-white transition-all duration-200 ease-in"><FontAwesomeIcon className="text-l" icon={faPhone} /> 416.951.9592</a></div>
             <div className="sub-menu lg:ml-auto flex gap-3">
-                <div className="rounded-md hover:bg-so-lightblue cursor-pointer transition-all ease-in bg-amber-300 p-4 pl-6 pr-6 text-so-darkblue hover:text-white">Contact</div>
-                <div className="rounded-md hover:bg-so-lightblue cursor-pointer transition-all ease-in bg-amber-300 p-4 pl-6 pr-6 text-so-darkblue hover:text-white">Work</div>
+                <NavLink to="/" className="rounded-md hover:bg-so-lightblue cursor-pointer transition-all ease-in bg-amber-300 p-4 pl-6 pr-6 text-so-darkblue hover:text-white">Contact</NavLink>
+                <NavLink to="/work" className="rounded-md hover:bg-so-lightblue cursor-pointer transition-all ease-in bg-amber-300 p-4 pl-6 pr-6 text-so-darkblue hover:text-white">Work</NavLink>
 
             </div>
         </div>

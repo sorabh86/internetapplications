@@ -20,7 +20,7 @@ function Footer() {
         className="link-btn ml-auto"
         href="https://sorabh86.github.io"
       >
-        <FontAwesomeIcon icon={faGlobe} /> Sorabh86 - Web Dev
+        <FontAwesomeIcon icon={faGlobe} /> Sorabh86 - Web | App Dev
       </a>
     </div>
   );
