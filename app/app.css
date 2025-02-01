@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Comfortaa', 'Comic Sans MS', cursive, sans-serif;
+  --text-so-lg: 3rem; 
+  --text-so-sm: 0.9rem;
+  --color-so-lightblue: #2196F3;
+  --color-so-blue: #07115B;
+  --color-so-blue-8: rgba(7, 17, 91, .4);
+  --color-so-darkblue: #020A31;
+  --color-so-darkblue-6: rgba(2, 10, 49, 0.6);
+  --color-so-darkblue-8: rgba(2, 10, 49, 0.8);
+  --color-so-white-8: rgba(255, 255, 255, 0.8);
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+
+.clip-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: all .5s;
+  cursor: pointer;
+  color:var(--color-so-darkblue);
+  background-color: var(--color-amber-300);
+}
+.clip-hexagon > a > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.8rem;
+}
+
+.clip-hexagon > p {
+  text-transform: capitalize;
+}
+
+.clip-hexagon:hover {
+  color: var(--color-so-darkblue);
+  background-color: var(--color-so-lightblue);
+}
+
+.link-btn {
+  color: var(--color-white);
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.link-btn:hover {
+  color: var(--color-amber-300);
+}
