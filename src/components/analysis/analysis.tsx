@@ -14,14 +14,12 @@ function Analysis(props: Props) {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="content">
         <Parallax speed={-40} className="absolute w-full h-full scale-110">
           <div className="w-full h-full bg-[url(headerbg.jpg)] bg-cover bg-center scale-130"></div>
         </Parallax>
-        <div className="relative bg-so-blue-8">
-          <h3 className="font-bold text-3xl lg:text-so-lg text-white text-center mb-10 bg-linear-to-b from-[#07115B] pt-4 pb-2 pl-6 pr-6 rounded-b-2xl to-[#020A31] place-self-center">
-            Analysis
-          </h3>
+        <div className="content-inner-c">
+          <h3 className="content-header"> Analysis </h3>
           <ul className="grid lg:grid-cols-4 gap-4 mb-10 md:p-2 lg:p-10 pt-0 ">
             <li className="p-6 bg-so-white-8 border-1 rounded-lg shadow-md text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Network</h2>

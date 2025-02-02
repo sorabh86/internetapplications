@@ -9,12 +9,12 @@ function About(props: Props) {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="content">
         <Parallax speed={-40} className="absolute w-full h-full scale-110">
           <div className="w-full h-full bg-[url(headerbg.jpg)] bg-cover bg-center top-0 left-0 scale-140"></div>
         </Parallax>
 
-        <div className="relative flex flex-col items-center lg:flex-row place-self-center gap-10 bg-so-darkblue-6 text-yellow p-10">
+        <div className="content-inner place-self-center gap-10 p-10">
           <div className="rounded rounded-2xl overflow-hidden drop-shadow-[5px_5px_5px_rgba(0,0,0,0.8)]">
             <img src="./Charles-Drake.png" alt="Software Developer" />
           </div>

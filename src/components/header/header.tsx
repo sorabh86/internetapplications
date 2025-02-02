@@ -10,7 +10,7 @@ function Header(props: Props) {
 
   return (
     <>
-      <div className="relative h-auto overflow-hidden">
+      <div className="header">
         <Parallax speed={-20} className="absolute w-full h-full scale-110">
           <div className="w-full h-full bg-[url(headerbg.jpg)] bg-cover bg-center top-0 left-0 scale-140"></div>
         </Parallax>

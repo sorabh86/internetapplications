@@ -2,7 +2,7 @@
 
 @theme {
   --font-sans: 'Comfortaa', 'Comic Sans MS', cursive, sans-serif;
-  --text-so-lg: 3rem; 
+  --text-so-lg: 2.8rem; 
   --text-so-sm: 0.9rem;
   --color-so-lightblue: #2196F3;
   --color-so-blue: #07115B;
@@ -22,8 +22,38 @@ body {
   }
 }
 
+.header {
+  @apply  relative h-auto overflow-hidden;
+}
+.footer {
+  @apply flex justify-center bg-so-darkblue text-center p-10;
+}
+
+.content {
+  @apply relative overflow-hidden border-t-8 border-t-so-darkblue;
+}
+.content-inner {
+  @apply relative flex flex-col items-center bg-so-darkblue-6 lg:flex-row;
+}
+.content-inner-c {
+  @apply relative bg-so-darkblue-6;
+}
+.content-inner-g {
+  @apply grid lg:grid-cols-3 gap-4 mb-10 md:p-2 lg:p-10 pt-0;
+}
+
+.content-header {
+  @apply font-bold text-amber-200 text-3xl lg:text-so-lg 
+    shadow-lg shadow-so-lightblue
+    text-center mb-5 pt-4 pb-4 pl-10 pr-10 
+    bg-linear-1 from-so-blue to-so-darkblue
+    rounded-b-2xl place-self-center;
+    text-shadow: -2px -2px 4px #fff;
+}
+
 
 .clip-hexagon {
+  @apply shadow shadow shadow-white;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   transition: all .5s;
   cursor: pointer;

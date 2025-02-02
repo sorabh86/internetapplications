@@ -1,5 +1,6 @@
 import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Parallax } from 'react-scroll-parallax'
 
 interface Props {}
 
@@ -8,10 +9,13 @@ function Work(props: Props) {
 
     return (
         <>
-        <div className="text-so-sm text-black bg-[url(headerbg.jpg)] bg-cover bg-bottom">
-                <h3 className="font-bold text-3xl lg:text-so-lg text-white text-center mb-10 bg-linear-to-b from-[#07115B] pt-2 pb-2 pl-6 pr-6 rounded-b-2xl to-[#020A31] place-self-center">
-                  Work
-                </h3>
+        <div className="content">
+          <Parallax speed={-40} className="absolute w-full h-full scale-110">
+            <div className="w-full h-full bg-[url(headerbg.jpg)] bg-cover bg-center scale-130"></div>
+          </Parallax>
+          <div className="content-inner-c">
+          
+                <h3 className="content-header"> Work </h3>
                 <ul className="grid lg:grid-cols-4 gap-4 mb-10 md:p-2 lg:p-10 pt-0 ">
                   <li className="p-6 bg-so-white-8 border-1 rounded-lg shadow-md text-center">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">Network</h2>
@@ -36,6 +40,7 @@ function Work(props: Props) {
                     — David L - Marketing Communications Manager - Microsoft Canada
                   </footer>
                 </div>
+              </div>
               </div>
         </>
     )

@@ -1,148 +1,143 @@
+import { Parallax } from "react-scroll-parallax";
 
 interface Props {}
 
 function Design(props: Props) {
   const {} = props;
+  const designs = [
+    {
+      name: "BWyze - Creative Direction, Project Mgmt NLB Mediaimage",
+      image: "/internetapplications/work/bwyze.png",
+    },
+    {
+      name: "CPD File - Creative Direction NLB Media",
+      image: "/internetapplications/work/cpdfile.png",
+    },
+    {
+      name: "Tutor Doctor",
+      image: "/internetapplications/work/tutordoctor.png",
+    },
+    {
+      name: "Blush Pretty - Creative Direction, Project Mgmt NLB Media",
+      image: "/internetapplications/work/blushpretty.png",
+    },
+    {
+      name: "Cedar Wood Structures",
+      image: "/internetapplications/work/cedarwood_600x450.png",
+    },
+    {
+      name: "Fresh Beautiful - Creative Direction, Project Mgmt NLB Media",
+      image: "/internetapplications/work/freshbeautiful.png",
+    },
+    {
+      name: "Integrity Leads",
+      image: "/internetapplications/work/integrity.png",
+    },
+    {
+      name: "Condo Garage",
+      image: "/internetapplications/work/condo-garage2_600x450.jpg",
+    },
+    {
+      name: "Adour St Regis",
+      image: "/internetapplications/work/adour-stregis3_600x450.jpg",
+    },
+    {
+      name: "The Right Mountain",
+      image: "/internetapplications/work/the-right-mountain2_600x450.jpg",
+    },
+    {
+      name: "Microsoft Dynamics",
+      image: "/internetapplications/work/MS_dynamicsjobsportal_600x450.jpg",
+    },
+    {
+      name: "Microsoft Expression",
+      image: "/internetapplications/work/MS_expression_600x450.jpg",
+    },
+    {
+      name: "Nanodots",
+      image: "/internetapplications/work/nanodots.png",
+    },
+    {
+      name: "Microsoft Promotion",
+      image: "/internetapplications/work/MS_plantowin_600x450.jpg",
+    },
+    {
+      name: "Real Estate Network",
+      image: "/internetapplications/work/realestate-network_600x450.jpg",
+    },
+    {
+      name: "Flirt - Creative Direction, Project Mgmt NLB Media",
+      image: "/internetapplications/work/flirt.png",
+    },
+    {
+      name: "Qualicare Franchise",
+      image: "/internetapplications/work/qualicare-franchise.png",
+    },
+    {
+      name: "Plastair",
+      image: "/internetapplications/work/plastair.png",
+    },
+    {
+      name: "Heartsafe",
+      image: "/internetapplications/work/heartsafe-shop.png",
+    },
+    {
+      name: "BP Boutique - Creative Direction, Project Mgmt NLB Media",
+      image: "/internetapplications/work/bp_boutique.png",
+    },
+    {
+      name: "Tutor Doctor Panama",
+      image: "/internetapplications/work/tutordoctor-panama.png",
+    },
+    {
+      name: "Birkhoff Research",
+      image: "/internetapplications/work/birkhoff.png",
+    },
+    {
+      name: "Microsoft Store",
+      image: "/internetapplications/work/MS_SBhp_600x450.jpg",
+    },
+    {
+      name: "Qualicare Health Caree",
+      image: "/internetapplications/work/qualicare.png",
+    },
+  ];
 
   return (
     <>
-      <div className="text-so-sm text-black bg-[url(human-ai.jpg)] bg-center">
-        <h3 className="font-bold text-2xl lg:text-so-lg text-white text-center mb-10 bg-linear-to-b from-[#07115B] pt-2 pb-2 pl-6 pr-6 rounded-b-2xl to-[#020A31] place-self-center">
-          Design
-        </h3>
-        <ul className="grid lg:grid-cols-3 gap-4 mb-10 md:p-2 lg:p-10 pt-0 ">
-          <li className="border p-6 bg-amber-50 bg-opacity-7 rounded-md opacity-90 flex flex-col justify-around">
-            <h4 className="text-center font-bold text-xl pb-2">
-              Application Development
-            </h4>
-            <p className="pb-2">
-              Extensive experience in developing online applications of all
-              sizes, from small businesses to large enterprises. Key
-              accomplishments include:
-            </p>
-            <ul className="list-disc pl-6 grid gap-2">
-              <li>
-                Developing business-critical applications for enterprises, small
-                and mid-sized businesses
+      <div className="content text-so-sm text-black">
+        <Parallax speed={-100} className="absolute w-full h-full scale-120 opacity-70">
+          <div className="w-full h-full bg-[url(headerbg.jpg)] bg-cover bg-center scale-130"></div>
+        </Parallax>
+        <div className="content-inner-c">
+          <h3 className="content-header"> Design </h3>
+          <ul className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10 pt-10 pb- 10 md:pl-20 md:pr-20 lg:pl-40 lg:pr-40 pt-0 ">
+            {designs.map((design, index) => (
+              <li
+                key={index}
+                className="border p-6 bg-so-white-8 bg-opacity-7 rounded-md opacity-90 flex flex-col justify-around"
+              >
+                <h4 className="text-center font-bold text-xl pb-2">
+                  {design.name}
+                </h4>
+                <img srcSet={design.image} />
               </li>
-              <li>
-                End-to-end development experience across the entire lifecycle
-                from prospecting and sales to fulfillment, invoicing, and
-                billing
-              </li>
-            </ul>
-          </li>
-          <li className="border p-6 bg-amber-50 bg-opacity-7 rounded-md opacity-90 flex flex-col justify-around">
-            <h4 className="text-center font-bold text-xl pb-2">
-              MVC Application Design
-            </h4>
-            <p className="pb-2">
-              Designed and architected a highly scalable CRM, ERP, and Billing
-              system for an international user base of 20,000. Key contributions
-              include:
-            </p>
-            <ul className="list-disc pl-6 grid gap-2">
-              <li>Expertise in MVC data and application modeling</li>
-              <li>
-                System architecture design using LAMP stack, Zend Framework, and
-                AWS EC2
-              </li>
-            </ul>
-          </li>
-          <li className="border p-6 bg-amber-50 bg-opacity-7 rounded-md opacity-90 flex flex-col justify-around">
-            <h4 className="text-center font-bold text-xl pb-2">
-              Cloud Linux System Administration
-            </h4>
-            <p className="pb-2">
-              Successfully managed a large-scale, load-balanced LAMP application
-              platform. Responsibilities included:
-            </p>
-            <ul className="list-disc pl-6 grid gap-2">
-              <li>
-                Leveraging Amazon Web Services (AWS EC2, RDS, S3, and AWS SDK
-                APIs) for scalable infrastructure
-              </li>
-              <li>
-                Linux shell scripting, cron jobs, installation and configuration
-                of extensions and security software, web server configuration
-                (Apache, PHP), as well as backup and recovery operations
-              </li>
-            </ul>
-          </li>
-          <li className="border p-6 bg-amber-50 bg-opacity-7 rounded-md opacity-90 flex flex-col justify-around">
-            <h4 className="text-center font-bold text-xl pb-2">
-              Relational Database Development
-            </h4>
-            <p className="pb-2">
-              Deep expertise in relational database design and management. Key
-              skills include:
-            </p>
-            <ul className="list-disc pl-6 grid gap-2">
-              <li>
-                Database design and administration for high-performance
-                applications
-              </li>
-              <li>Crafting complex SQL queries involving 10+ table joins</li>
-              <li>
-                Developing dynamic SQL queries and leveraging prepared
-                statements for secure and efficient data retrieval
-              </li>
-              <li>
-                Data warehousing, reporting, and analytics for business insights
-              </li>
-            </ul>
-          </li>
-          <li className="border p-6 bg-amber-50 bg-opacity-7 rounded-md opacity-90 flex flex-col justify-around">
-            <h4 className="text-center font-bold text-xl pb-2">
-              Business Analysis
-            </h4>
-            <p className="pb-2">
-              Strong background in analyzing complex business models and
-              supporting organizational growth. Key analysis experience
-              includes:
-            </p>
-            <ul className="list-disc pl-6 grid gap-2">
-              <li>Revenue recognition and billing for open services</li>
-              <li>
-                In-depth analysis of expanding businesses and evolving business
-                models
-              </li>
-              <li>Multi-tiered analysis of franchisor/franchisee models</li>
-            </ul>
-          </li>
-          <li className="border p-6 bg-amber-50 bg-opacity-7 rounded-md opacity-90 flex flex-col justify-around">
-            <h4 className="text-center font-bold text-xl pb-2">
-              Project Management
-            </h4>
-            <p className="pb-2">
-              Extensive experience in managing large-scale projects with
-              cross-functional teams and stakeholders. Key responsibilities
-              included:
-            </p>
-            <ul className="list-disc pl-6 grid gap-2">
-              <li>
-                Managing large-scale projects with significant budgets and
-                multiple stakeholders
-              </li>
-              <li>
-                Coordinating resources across geographic locations and multiple
-                organizational boundaries
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div className="p-6 border-1-4 border-blue-500 bg-gray-100">
-          <blockquote className="text-lg italic text-gray-700">
-            “Working with Charles has been a pleasure; his professional and
-            approachable demeanor made completion of projects straightforward
-            and efficient. This was specifically evident in his work on two of
-            my projects: www.microsoft.ca/dynamics and www.everyonegetsit.ca.
-            His great work with these highly trafficked sites was
-            indispensable.”
-          </blockquote>
-          <footer className="mt-4 text-gray-900 font-semibold">
-            — Reja M - Marketing Communications Manager - Microsoft Canada
-          </footer>
+            ))}
+          </ul>
+          <div className="p-6 border-1-4 border-blue-500 bg-gray-100">
+            <blockquote className="text-lg italic text-gray-700">
+              “As an online marketing specialist with a business background, I
+              count on Charles to help me with the technical expertise I need.
+              Unlike many developers, he suggests options that will work,
+              instead of simply saying what doesn't. I also appreciate his
+              plain-English explanations of complex development projects since
+              it helps with problem solving. I would recommend Charles as a
+              reliable and helpful partner.”
+            </blockquote>
+            <footer className="mt-4 text-gray-900 font-semibold">
+              — Stefania S - Convert Marketing
+            </footer>
+          </div>
         </div>
       </div>
     </>

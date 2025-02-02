@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 
 function Footer() {
   return (
-    <div className="flex justify-center bg-so-darkblue text-center p-10">
+    <div className="footer">
 
       <span>&copy; Copyright at Internet Applications</span>
       
