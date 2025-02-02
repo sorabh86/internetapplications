@@ -1,6 +1,7 @@
 import { faHandshake, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Parallax } from "react-scroll-parallax";
+import LazyImage from "../loading/lazyimage";
 
 interface Props {}
 
@@ -16,7 +17,7 @@ function About(props: Props) {
 
         <div className="content-inner place-self-center gap-10 p-10">
           <div className="rounded rounded-2xl overflow-hidden drop-shadow-[5px_5px_5px_rgba(0,0,0,0.8)]">
-            <img src="./Charles-Drake.png" alt="Software Developer" />
+            <LazyImage src="./Charles-Drake.png" alt="Software Developer" />
           </div>
           <div>
             <h1 className="text-3xl mb-4 font-bold text-amber-300">

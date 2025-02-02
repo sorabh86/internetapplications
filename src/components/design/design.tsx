@@ -1,4 +1,5 @@
 import { Parallax } from "react-scroll-parallax";
+import LazyImage from "../loading/lazyimage";
 
 interface Props {}
 
@@ -120,7 +121,7 @@ function Design(props: Props) {
                 <h4 className="text-center font-bold text-xl pb-2">
                   {design.name}
                 </h4>
-                <img srcSet={design.image} />
+                <LazyImage src={design.image} alt={design.name} />
               </li>
             ))}
           </ul>
