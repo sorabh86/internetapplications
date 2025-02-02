@@ -16,7 +16,7 @@ function Analysis(props: Props) {
     <>
       <div className="relative overflow-hidden">
         <Parallax speed={-40} className="absolute w-full h-full scale-110">
-          <div className="w-full h-full bg-[url(/headerbg.jpg)] bg-cover bg-center scale-130"></div>
+          <div className="w-full h-full bg-[url(headerbg.jpg)] bg-cover bg-center scale-130"></div>
         </Parallax>
         <div className="relative bg-so-blue-8">
           <h3 className="font-bold text-3xl lg:text-so-lg text-white text-center mb-10 bg-linear-to-b from-[#07115B] pt-4 pb-2 pl-6 pr-6 rounded-b-2xl to-[#020A31] place-self-center">

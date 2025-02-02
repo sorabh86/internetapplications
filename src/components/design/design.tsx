@@ -6,7 +6,7 @@ function Design(props: Props) {
 
   return (
     <>
-      <div className="text-so-sm text-black bg-[url(/human-ai.jpg)] bg-center">
+      <div className="text-so-sm text-black bg-[url(human-ai.jpg)] bg-center">
         <h3 className="font-bold text-2xl lg:text-so-lg text-white text-center mb-10 bg-linear-to-b from-[#07115B] pt-2 pb-2 pl-6 pr-6 rounded-b-2xl to-[#020A31] place-self-center">
           Design
         </h3>
