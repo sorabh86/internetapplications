@@ -1,3 +1,4 @@
+import React from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { NavLink, Route, Routes, useLocation } from 'react-router'
 import Header from './components/header/header'

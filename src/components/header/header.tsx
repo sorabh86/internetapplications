@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faMagnifyingGlassChart, faPenNib, faGears } from "@fortawesome/free-solid-svg-icons";
 import { Parallax } from "react-scroll-parallax";

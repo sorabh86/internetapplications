@@ -1,3 +1,4 @@
+import React from 'react'
 import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Parallax } from 'react-scroll-parallax'
